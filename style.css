@@ -1,0 +1,134 @@
+/* ===== Базовые стили страницы ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fde1ff;
+  font-family: system-ui, "Segoe UI", sans-serif;
+  color: #222;
+}
+
+/* ===== Карточка-визитка ===== */
+.card {
+  background: #ffffff;
+  width: 360px;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.avatar {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.name {
+  color: #1c2333;
+  font-size: 28px;
+  margin: 8px 0 2px;
+}
+
+.role {
+  color: #801c82;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 16px;
+}
+
+.bio {
+  color: #555;
+  line-height: 1.5;
+}
+
+.subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  margin-top: 24px;
+}
+
+.interests {
+  text-align: left;
+  display: inline-block;
+  color: #333;
+  line-height: 1.7;
+}
+
+.actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #801c82;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-ghost {
+  background: #eceafd;
+  color: #801c82;
+}
+
+.btn-like {
+    background: #eceafd;
+}
+
+.contact {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+/* спрятанный элемент */
+.hidden {
+  display: none;
+}
+
+/* ===== Лайк ===== */
+body.like .btn-like {
+    background: #801c82;
+}
+
+/* ===== Тёмная тема (её включает кнопка «Тема») ===== */
+body.dark-mode {
+  background: #2f255c;
+  color: #eee;
+}
+
+body.dark-mode .card {
+  background: #414f7d;
+  box-shadow: none;
+}
+
+body.dark-mode .role {
+    color: #afd3f6;
+}
+
+body.dark-mode .name,
+body.dark-mode .btn-ghost {
+    color: #afd3f6;
+}
+
+body.dark-mode .btn {
+    background: #afd3f6;
+    color: #2f255c;
+}
+
+body.dark-mode.like .btn-like {
+    background: #2f255c;
+}
+
+body.dark-mode .bio,
+body.dark-mode .interests {
+  color: #d4ddf3;
+}
